@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0%;
+  min-height: 100vh;
+  width: 100%;
+
+  background: linear-gradient(white, rgb(31, 28, 28));
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.mytabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-left: 164px;
+  margin-right: 164px;
+  margin-bottom: 75px;
+  padding: 12px;
+  z-index: 10;
+  box-shadow: 2px 5px 8px black;
+  border-radius: 20px;
+}
+
+.mytabs input[type="radio"] {
+  display: none;
+}
+.mytabs label {
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 1px;
+  background: transparent;
+  font-weight: bolder;
+}
+.mytabs label:hover {
+  color: yellowgreen;
+}
+.mytabs label[for="tabhome"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.mytabs label[for="tabEstore"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.mytabs label[for="tabMedia"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.mytabs label[for="tabResources"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.mytabs label[for="tabNewsRoom"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.mytabs label[for="tabQuicklinks"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.mytabs label[for="tabPrograms"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.mytabs label[for="tabEvents"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.mytabs label[for="tabContactus"] {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.mytabs .tab {
+  width: 100%;
+  padding: 23px;
+  padding-bottom: 0%;
+  background-color: gray;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  order: 1;
+  display: none;
+  padding-left: 15px;
+}
+
+.mytabs .tab h2 {
+  font-size: medium;
+}
+.mytabs input[type="radio"]:checked + label + .tab {
+  display: block;
+  background: white;
+}
+.mytabs input[type="radio"]:checked + label {
+  background: white;
+  color: darkgoldenrod;
+}
+.mytabs .login {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 0;
+  font-weight: bold;
+  color: chocolate;
+  text-decoration: none;
+  float: right;
+  margin-left: 75px;
+}
+.login:hover {
+  color: yellowgreen;
+}
+.logo-Container {
+  float: left;
+  padding: 10px;
+  width: 50%;
+}
+
+.search {
+  float: right;
+  width: 40%;
+  margin-top: 32px;
+}
+.search input {
+  float: right;
+  margin-right: 8px;
+}
+.search input:hover {
+  box-shadow: 1px 1px 3px black;
+
+  border-radius: 20px;
+}
+.searchbtn {
+  float: right;
+  margin-top: 0px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.searchbtn a {
+  bottom: 5px;
+}
+.main-content {
+  width: 100%;
+}
+.main-content {
+  margin: 0;
+}
+.leftcontent {
+  margin-left: 0px;
+  width: 75%;
+  float: left;
+}
+.sublinks {
+  font-size: smaller;
+  color: gray;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+.sublinks a {
+  font-family: Poppins;
+  text-decoration: none;
+  font-size: 11px;
+  color: chocolate;
+}
+
+.readmore {
+  width: 100%;
+  margin-top: 10px;
+}
+.imgwithtext {
+  margin-top: 10px;
+  width: 32%;
+  float: left;
+  margin-right: 14px;
+}
+#lastimg {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.read {
+  width: 235px;
+  color: purple;
+}
+.read p {
+  font-size: small;
+}
+.readmorelink a {
+  font-size: smaller;
+  color: chocolate;
+  text-decoration: none;
+}
+footer {
+  z-index: 0;
+  bottom: 0%;
+  position: fixed;
+  height: 110px;
+  width: 100%;
+  background: lightgray;
+}
+.bottomicons {
+  width: 80%;
+  margin-right: 166px;
+  margin-left: 166px;
+}
+.radiopng img {
+  position: relative;
+  width: 45px;
+  top: 36px;
+  float: left;
+}
+.radiopng a {
+  position: relative;
+  top: 38px;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+}
+
+.Tvpng img {
+  width: 35px;
+  position: relative;
+
+  bottom: 0px;
+  float: left;
+  left: 7.2%;
+}
+.Tvpng a {
+  position: absolute;
+  top: 46px;
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+  left: 24.3%;
+}
+
+.messagepng img {
+  width: 34px;
+  position: absolute;
+
+  bottom: 35px;
+  float: left;
+  left: 31%;
+}
+.messagepng a {
+  position: absolute;
+  top: 46px;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  left: 33.8%;
+}
+.copyright {
+  float: right;
+  position: relative;
+  bottom: 12px;
+  font-size: 12px;
+  right: 70px;
+}
+
+.search input {
+  border: 3px solid olivedrab;
+  height: 25px;
+  border-radius: 50px;
+  border-width: 1px;
+  padding: 0 10px;
+}
+.wrapper {
+  width: 99%;
+  margin-top: 0px;
+  height: 50%;
+  border-style: groove;
+  overflow: hidden;
+  left: 200px;
+  right: 200px;
+  margin-left: 0%;
+  margin-right: 39%;
+  border-radius: 15px;
+}
+.slides-container {
+  margin-left: 0px;
+  right: 0;
+
+  margin-right: 67.5px;
+  margin-top: 0px;
+  height: 229px;
+  width: 100%;
+  background: transparent;
+  position: relative;
+
+  transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
+}
+.slide-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.slide-image img .escape {
+  margin-top: 20px;
+}
+.next-btn,
+.prev-btn {
+  font-family: Poppins;
+  font-size: 13px;
+  top: 93%;
+}
+.next-btn {
+  background: transparent;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 65.5%;
+  border-radius: 50px;
+  z-index: 5;
+  left: 63.5%;
+
+  font-size: 18px;
+  transition: 300ms;
+  cursor: pointer;
+}
+.sublinks a:hover {
+  color: yellowgreen;
+}
+.prev-btn {
+  background: transparent;
+  padding: 10px;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 65.5%;
+  border-radius: 50px;
+  z-index: 5;
+  left: 14.5%;
+
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.next-btn:hover,
+.prev-btn:hover {
+  color: orangered;
+}
+
+/*Navigation dots*/
+.navigation-dots {
+  width: 100%;
+  height: 10px;
+  z-index: 10;
+  margin-top: -2%;
+  position: absolute;
+  left: 38%;
+  margin-top: 5px;
+}
+
+.single-dot {
+  background: transparent;
+  height: 10px;
+  width: 10px;
+
+  box-shadow: 2px 5px 8px black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 400ms;
+  float: left;
+  margin-right: 7px;
+}
+.single-dot:hover {
+  background: yellow;
+}
+.single-dot.active {
+  background-color: yellow;
+}
+
+.longbar {
+  border: 9px;
+  width: 98%;
+  height: 17px;
+  margin-left: 0px;
+  margin-top: -4px;
+  border-style: outset;
+  z-index: 23;
+}
+.longbar img {
+  margin-top: 0px;
+  border-radius: 3px;
+  height: 18px;
+}
+.sublinks a :hover {
+  color: yellowgreen;
+}
+.mainright {
+  width: 25%;
+
+  height: 700px;
+  float: right;
+}
+.right-content {
+  width: 100%;
+
+  height: 400px;
+  float: right;
+}
+
+.accordian {
+  width: 100%;
+  margin-left: 10px;
+  box-shadow: 1px 1px 5px 1px rgb(141, 139, 139);
+  border-radius: 5px;
+}
+.accordian .contentBx {
+  margin: 10px, 10px;
+  padding-bottom: 0;
+}
+
+.accordian .contentBx .label {
+  padding: 7px;
+  background: linear-gradient(white, rgb(184, 183, 183));
+  font-family: "Poppins", sans-serif;
+  color: black;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 5px;
+
+  padding-bottom: 13px;
+}
+.accordian .contentBx .label:hover {
+  color: yellowgreen;
+}
+.accordian .contentBx .label::before {
+  content: "▼";
+  top: 56%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 15px;
+  float: right;
+  margin-top: 7px;
+}
+.accordian .contentBx.active .label::before {
+  content: "▲";
+  color: yellowgreen;
+}
+.accordian .contentBx .content {
+  padding-left: 10px;
+  background: white;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.accordian .contentBx.active .content {
+  padding-top: 5px;
+  height: 220px;
+  width: 94%;
+  border-radius: 3px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+.wrapper1 {
+  width: 100%;
+  height: 100%;
+}
+.bookimg {
+  padding-left: 7px;
+  padding-top: 12px;
+  height: 95px;
+  padding-right: 5px;
+  width: 100%;
+}
+.howto {
+  font-size: 12px;
+  width: 148px;
+  margin: 0%;
+  float: right;
+  font-weight: bold;
+}
+.price {
+  float: right;
+  font-size: 13px;
+  color: gray;
+
+  width: 1px;
+  margin-top: 45px;
+}
+.descr {
+  width: 100%;
+}
+.thisbook {
+  float: left;
+  font-size: 12px;
+  padding: 5px;
+}
+.shop {
+  width: 100%;
+}
+
+.plus {
+  padding-top: 4px;
+  padding-bottom: 3px;
+  width: 45%;
+  float: left;
+  font-size: 16px;
+}
+
+.cart {
+  padding: 04px;
+  width: 45%;
+  float: right;
+  padding-top: 3px;
+}
+.moredetails {
+  font-size: 12px;
+  float: right;
+  margin-right: 12px;
+  text-decoration: none;
+  color: gray;
+}
+.addtocart {
+  font-size: 12px;
+  float: right;
+  margin-right: 19px;
+  text-decoration: none;
+  color: gray;
+}
+.innersee {
+  background: orange;
+  border-style: outset;
+  font-size: 12px;
+  text-align: center;
+  float: left;
+  width: 93%;
+  padding: 1px;
+  padding-bottom: 4px;
+  color: aliceblue;
+}
+.innersee:hover {
+  background-color: orangered;
+}
+.moredetails:hover,
+.addtocart:hover {
+  color: yellowgreen;
+}
+.rightbottom {
+  bottom: 0;
+  float: right;
+  margin-top: 65px;
+  margin-left: 0px;
+  width: 86%;
+  font-size: 12px;
+}
+
+.quicklinks a {
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+}
